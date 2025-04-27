@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms Practice</title>
+</head>
+
+<body>
+  <form method="post" novalidate>
+    <!-- <input type="text"> -->
+    <label for="fname">Full Name:</label>
+    <input type="text" name="fname" id="fname" value="Nizam" required><br><br>
+    <label for="f_name">Father Name:</label>
+    <input type="text" name="f_name" id="f_name" value="Ali Muhammad" readonly><br><br>
+    <!-- Email Input Example  -->
+    <label for="emailId">Email ID:</label>
+    <input type="email" name="emailId" id="emilId" placeholder="abc@gmail.com" multiple><br><br>
+
+    <label for="textArea">Leave our msg:</label><br>
+    <textarea name="textArea" id="textArea"></textarea><br><br>
+    <!-- Select example for drop down list -->
+    <label for="depart">Select Department:</label><br>
+    <select name="depart" id="depart" multiple>
+      <option value="bba">BBA</option>
+      <option value="cs">CS</option>
+      <option value="bee">BEE</option>
+      <option value="ml">ML</option>
+    </select><br><br>
+    <!-- Check Box Example -->
+    <p>Do you have a bike?</p>
+    <label for="bike1">Yes</label>
+    <input type="checkbox" name="bike1" id="bike1" value="yes">
+    <label for="bike2">No</label>
+    <input type="checkbox" name="bike2" id="bike2" value="no"><br><br>
+    <!-- Radio Button Exmaple -->
+    <p>Gender:</p>
+    <label for="male">male</label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="female">female</label>
+    <input type="radio" name="gender" id="female" value="female"><br><br>
+    <!-- Color picker -->
+    <label for="colorPicker">Choose Color:</label>
+    <input type="color" name="colorPicker" id="colorPicker"><br><br>
+    <!-- Date picker -->
+    <label for="birthDay">Birth Date:</label>
+    <input type="date" name="birthDay" id="birthDay"><br><br>
+    <!-- Date with local time -->
+    <label for="localDateTime">Meeting Date and Time:</label>
+    <input type="datetime-local" name="localDateTime" id="localDateTime"><br><br>
+    <!-- <input type="month"> -->
+    <label for="startMonth">Start Month:</label>
+    <input type="month" name="startMonth" id="startMonth"><br><br>
+    <!-- Uploading File -->
+    <label for="fileUpload">Choose file:</label>
+    <input type="file" name="fileUpload" id="fileUpload"><br><br>
+    <!-- Send hidden data without showing it to the user  -->
+    <p>Send hidden data without showing it to the user</p>
+    <input type="hidden" name="userID" id="userID" value="abc123"><br><br>
+    <!-- Image input -->
+    <p>image as a submit button.</p>
+    <label for="submitImage">Submit:</label><br>
+    <input type="image" id="submitImage" src="images\download.jpeg" alt="Submit" width="80">
+    <br><br>
+    <!-- number as an input -->
+    <label for="quantity">Quantity:</label>
+    <input type="number" name="quantity" id="quantity" min="-100" max="100" step="5"><br><br>
+    <!-- password as input -->
+    <label for="passcode">Password:</label>
+    <input type="password" name="passcode" id="passcode" maxlength="8" size="20"><br><br>
+    <!-- Range input for volumne -->
+    <label for="volumeRange">Volume:</label>
+    <input type="range" name="volumeRange" id="volumeRange" min="0" max="10"><br><br>
+    <!-- Reset fields -->
+    <label for="resetFields">Reset Form:</label>
+    <input type="reset" name="resetFields" id="resetFields" value="Reset"><br><br>
+    <!-- <input type="search"> -->
+    <label for="searchItems">Search:</label>
+    <input type="search" name="searchItems" id="searchItems" placeholder="search here ..." autocapitalize="on"><br><br>
+    <!-- Telephone Number -->
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="tele" name="phoneNumber" id="phoneNumber" placeholder="0000-0000-000" autofocus><br><br>
+    <!-- <input type="time"> -->
+    <label for="appointmentTime">Appointment Time:</label>
+    <input type="time" name="appointmentTime" id="appointmentTime"><br><br>
+    <!-- <input type="week"> -->
+    <label for="selectWeek">Select Week:</label>
+    <input type="week" name="selectWeek" id="selectWeek"><br><br>
+    <!-- <input type="url"> -->
+    <label for="websiteURL">Website:</label>
+    <input type="url" name="websiteURL" id="websiteURL" placeholder="https://example.com"><br><br>
+    <!-- Pattern attribute -->
+    <label for="country_code">Country code:</label>
+    <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+    <!-- An <input> element with pre-defined values in a <datalist>: -->
+      <p>Choose Browser:</p>
+    <input list="browsers">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist> <br><br>
+    <!-- <input type="submit"> -->
+    <label for="submitForm">Submit Form here: </label>
+    <input type="submit" name="submitForm" id="submitForm" value="Submit"><br><br>
+  </form>
+</body>
+
+</html>
