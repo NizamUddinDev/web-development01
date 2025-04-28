@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Information</title>
+  </head>
+
+  <body>
+    <h2>Complex Form</h2>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fname">Name</label>
+        <input type="text" name="fname" id="fname" />
+        <label for="emailID">Email</label>
+        <input type="email" name="emailID" id="emailID" />
+        <label for="phoneNo">Phone</label>
+        <input type="tel" name="phoneNo" id="phoneNo" />
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob" />
+        <p style="display: inline">Gender</p>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" />
+        <label for="country">Country</label>
+        <select name="country" id="country">
+          <option value="US">United State</option>
+          <option value="PK">Pakistan</option>
+          <option value="UK">United Kingdom</option>
+          <option value="IND">Inida</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Address:</legend>
+        <label for="addrStreet">Street</label>
+        <input type="text" name="addrStreet" id="addrStreet" />
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" />
+        <label for="stat">State</label>
+        <input type="text" name="stat" id="stat" />
+        <label for="zipCode">Zip Code</label>
+        <input type="text" name="zipCode" id="zipCode" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Other Information</legend>
+        <label for="comment">Comments:</label><br />
+        <textarea name="comment" id="comment" cols="40" rows="10"></textarea
+        ><br />
+        <label for="service">I agree to the terms of service</label>
+        <input type="checkbox" name="service" id="service" />
+        <input type="submit" name="sub" id="sub" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>

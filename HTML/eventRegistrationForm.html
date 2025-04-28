@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+
+<body>
+    <h2>Event Registration</h2>
+    <form>
+        <label for="fname">Name:</label>
+        <input type="text" name="fname" id="fname" required><br><br>
+        <label for="emailId">Email:</label>
+        <input type="email" name="emailId" id="emailId"><br><br>
+        <label for="telephone">Phone:</label>
+        <input type="tel" name="telephone" id="telephone" placeholder="0000-0000-000"><br><br>
+        <label for="work">Occupation:</label>
+        <select name="work" id="work">
+            <option value="teacher">Teacher</option>
+            <option value="Dr">Doctor</option>
+            <option value="LLB">Advocate</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        <label for="experience">Experience (Years): </label>
+        <input type="number" name="experience" id="experience" min="0" max="50"><br><br>
+        <fieldset>
+            <legend>Topics of interest:</legend>
+            <input type="checkbox" name="html" id="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" name="css" id="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="js" id="js"> 
+            <label for="js">Javascript</label><br><br>
+        </fieldset>
+
+        <label for="comment">Comments:</label><br>
+        <textarea name="comment" id="comment" cols="40" rows="10"></textarea><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+
+</html>
