@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Elements</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h2{
+            border: 2px solid rgb(24, 151, 151);
+            margin: 20px;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .span1{
+            border: 2px solid rgb(9, 118, 134);
+            width: 20px;
+            height: 20px;
+            margin: 20px;
+            padding: 10px;
+            /*No custom wdht, height apply on inline elements, margin can be applied 
+            only in horizontal axis but padding applied in all direction,
+            but by making inline to block all custom properties can be applied*/
+        }
+        .span2{
+            display: inline-block;
+            border: 2px solid rgb(9, 118, 134);
+            width: 100px;
+            height: 30px;
+            margin: 20px;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Display Inline and Block Level Elements</h2>
+    <span class="span1">Span Elements</span>
+    <span class="span2">Span Elements</span>
+</body>
+</html>
