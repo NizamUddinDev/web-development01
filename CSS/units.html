@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            border: 1px solid grey;
+            width: 50%;
+            background-color: aquamarine;
+        }
+        .box{
+            border: 1px solid black;
+            width: 50%; /*% unit depend parent elements width*/
+            background-color: aqua;
+        }
+        .box1{
+            border: 1px solid green;
+            background-color: aqua;
+            margin-top: 10px;
+            height: 50vh;
+            width: 50wh;
+
+        }
+        .box2{
+            border: 1px solid green;
+            background-color: rgb(141, 67, 246);
+            width: 50vw;
+            height: 50vh;
+            
+        }
+        .boxx{
+            border: 1px solid gray;
+            background-color: bisque;
+            margin-top: 10px;
+            font-size: 5px;
+        }
+        .boxxx{
+            font-size: 10em;
+            padding: 2em;
+        }
+        .boxxes{
+            border: 1px solid black;
+            background-color: aquamarine;
+            margin-top: 10px;
+            font-size: 4rem;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        parent
+        <div class="box">
+            child
+        </div>
+    </div>
+    
+    <div class="box1">
+        <div class="box2">
+            View port Hieght and width takes space w r t parent element (body)
+        </div>
+    </div>
+
+    <div class="boxx">
+        <div class="boxxx">
+            em is multiplied with parent elements size
+        </div>
+        
+    </div>
+
+    <div class="boxxes">
+        rem is multiplied with root element (html) size by 
+        default is (16px)
+    </div>
+</body>
+</html>
